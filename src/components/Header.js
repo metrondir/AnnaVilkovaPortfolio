@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import Socials from "./Socials";
-import Logo from "../img/header/logo.svg";
+import Logo from "../img/header/Logo1.svg";
 
 import MobileNav from "./MobileNav";
 
@@ -23,7 +23,11 @@ const Header = () => {
           to={"/"}
           className="max-w-[200px]"
         >
-          <img src={Logo} alt=""></img>
+          <img
+            src={Logo}
+            alt=""
+            className="transform lg:scale-150 sm:scale-20"
+          ></img>
         </Link>
         <nav
           onMouseEnter={mouseEnterHandler}

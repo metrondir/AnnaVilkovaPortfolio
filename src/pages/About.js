@@ -36,7 +36,7 @@ const About = () => {
             className="flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">About me</h1>
-            <p className="max-h-[60vh] max-w-lg overflow-y-auto p-5 rounded-md text-base lg:text-lg xl:text-xl mb-12">
+            <p className="max-h-[45vh] max-w-lg overflow-y-auto p-5 rounded-md text-base lg:text-lg xl:text-xl mb-12">
               Я навчалася в залізничному коледжі, по професії «Управління
               пасажирськими перевезеннями та вантажоперевезеннями» &#128644;
               &#129299; <br /> Так ось, 4 курс, я вже з 17 років живу окремо,
