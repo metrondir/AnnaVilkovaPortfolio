@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { transition1 } from "../transitions";
 
-import AnnaImage from "../img/contact/Anna.JPG";
+import AnnaImage from "../img/contact/Anna1.JPG";
 import { CursorContext } from "../context/CursorContext";
 const Contact = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
