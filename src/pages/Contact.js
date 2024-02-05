@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { transition1 } from "../transitions";
 
-import AnnaImage from "../img/contact/AnnaImage3.png";
+import AnnaImage from "../img/contact/Anna.JPG";
 import { CursorContext } from "../context/CursorContext";
 const Contact = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -66,8 +66,6 @@ const Contact = () => {
             </form>
           </div>
           <motion.div
-            onMouseEnter={mouseEnterHandler}
-            onMouseLeave={mouseLeaveHandler}
             className="lg:flex-1"
             initial={{ opacity: 0, y: "100%" }}
             animate={{ opacity: 1, y: 0 }}
