@@ -26,9 +26,9 @@ const Contact = () => {
             className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 rifgt-0 top-72 z-10"
           ></motion.div>
           <div
+            className="lg:flex-1 lg:pt-32 px-4"
             onMouseEnter={mouseEnterHandler}
             onMouseLeave={mouseLeaveHandler}
-            className="lg:flex-1 lg:pt-32 px-4"
           >
             <h1 className="h1">Contact me</h1>
             <p className="mb-12">I would love to get suggestions from you.</p>
@@ -72,7 +72,12 @@ const Contact = () => {
             exit={{ opacity: 0, y: "100%" }}
             transition={{ transition: transition1, duration: 1.5 }}
           >
-            <img src={AnnaImage} alt="" />
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              transition={transition1}
+              src={AnnaImage}
+              alt=""
+            />
           </motion.div>
         </div>
       </div>

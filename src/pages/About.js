@@ -19,20 +19,23 @@ const About = () => {
       exit={{ opacity: 0, y: "100%" }}
       transition={transition1}
     >
-      <div
-        onMouseEnter={mouseEnterHandler}
-        onMouseLeave={mouseLeaveHandler}
-        className="container mx-auto h-full relative"
-      >
+      <div className="container mx-auto h-full relative">
         <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16">
           <div className="flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden">
-            <img src={AnnaImage} alt=" " />
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              transition={transition1}
+              src={AnnaImage}
+              alt=" "
+            />
           </div>
           <motion.div
             initial={{ opacity: 0, y: "-80%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-80%" }}
             transition={transition1}
+            onMouseEnter={mouseEnterHandler}
+            onMouseLeave={mouseLeaveHandler}
             className="flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">About me</h1>
