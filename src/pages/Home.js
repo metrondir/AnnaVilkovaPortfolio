@@ -34,7 +34,7 @@ const Home = () => {
               photographer <br />& film maker
             </h1>
             <p className="text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12">
-              Odesa, Mykolaiv, Ukraine
+              Mykolaiv, Ukraine
             </p>
             <Link to={"/contact"} className="btn mb-[30px]">
               hire me{" "}
