@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import { IoMdClose } from "react-icons/io";
 import { CgMenuRight } from "react-icons/cg";
@@ -21,9 +21,12 @@ const menuVariants = {
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
-
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const portfolioRef = useRef(null);
   return (
-    <nav className="text-primary xl:hidden">
+    <nav className="text-primary xl:hidden flex justify-end items-center">
       <div
         onClick={() => setOpenMenu(true)}
         className="text-3xl cursor-pointer"

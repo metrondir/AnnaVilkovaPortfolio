@@ -12,8 +12,8 @@ const Header = () => {
   return (
     <header
       className="fixed w-full px-[30px] 
-  lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex 
-  items-center"
+  lg:px-[100px] z-30 h-[100px] lg:h-[90px] flex 
+  items-center shadow-xl bg-white"
     >
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
         {}
@@ -41,27 +41,27 @@ const Header = () => {
             Home
           </Link>
           <Link
-            to={"/about"}
+            to={"/"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             About
           </Link>
           <Link
-            to={"/portfolio"}
+            to={"/"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             Portfolio
           </Link>
           <Link
-            to={"/contact"}
+            to={"/"}
             className="text-[#696c6d] hover:text-primary transition"
           >
             Contact
           </Link>
         </nav>
         <nav>
-          <Socials />
           <MobileNav />
+          <Socials />
         </nav>
       </div>
     </header>
