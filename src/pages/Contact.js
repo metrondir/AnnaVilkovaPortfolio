@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 
 import { motion } from "framer-motion";
-
+import { FaInstagram } from "react-icons/fa";
 import { transition1 } from "../transitions";
 
 import AnnaImage from "../img/contact/AnnaImage.jpg";
@@ -30,22 +30,26 @@ const Contact = () => {
               <button
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                  xl:pr-10 
+                  xl:pr-10 xl:pl-10 
                   font-secondary w-full cursor-none
                   placeholder:text-[#757879]"
               >
+                <FaInstagram className="mx-14 lg:mx-20" />
                 <a
                   href="https://www.instagram.com/photographer_anna_vilkova/"
                   target="_blank"
+                  className="text-primary font-bold underline "
                   rel="noreferrer"
                 >
                   Instagram
                 </a>
               </button>
+
               <input
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
                    font-secondary w-full  xl:pl-12
+                   pt-6 pl-3
                   placeholder:text-[#757879]"
                 disabled
                 defaultValue={"+380962879050"}
