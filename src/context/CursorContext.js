@@ -47,8 +47,8 @@ const CursorProvider = ({ children }) => {
       mixBlendMode: "difference",
     },
     none: {
-      width: undefined,
-      height: undefined,
+      width: 0,
+      height: 0,
       backgroundColor: "#ffffff",
     },
   };

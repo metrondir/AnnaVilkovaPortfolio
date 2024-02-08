@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import handleScroll from "../utils/handleScroll";
-import { IoMdClose } from "react-icons/io";
+
 import { CgMenuRight } from "react-icons/cg";
 
 import { Link } from "react-router-dom";
@@ -50,7 +50,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(homeRef.current);
-                    setOpenMenu(false);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                   to={"/"}
                 >
@@ -61,7 +61,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(portfolioRef.current);
-                    setOpenMenu(false);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                   to={"/#portfolio"}
                 >
@@ -72,7 +72,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(aboutRef.current);
-                    setOpenMenu(false);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                   to={"/#about"}
                 >
@@ -82,7 +82,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
               <li>
                 <Link
                   onClick={() => {
-                    setOpenMenu(false);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                   to={"/gallery"}
                 >
@@ -93,7 +93,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   to="/#price"
                   onClick={() => {
-                    handleScroll(contactRef.current);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                 >
                   Цены
@@ -103,7 +103,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   to="/#course"
                   onClick={() => {
-                    handleScroll(contactRef.current);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                 >
                   Обучения
@@ -113,7 +113,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(contactRef.current);
-                    setOpenMenu(false);
+                    setTimeout(() => setOpenMenu(false), 322);
                   }}
                   to={"/#contact"}
                 >

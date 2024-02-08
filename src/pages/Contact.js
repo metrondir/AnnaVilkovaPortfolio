@@ -26,11 +26,12 @@ const Contact = () => {
           <h1 className="h1 text-center">Связаться со мной</h1>
 
           <div className="flex flex-col my-12">
-            <div className="flex gap-x-32">
+            <div className="flex gap-x-20">
               <button
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                  font-secondary w-full pl-3 cursor-none
+                  xl:pr-10 
+                  font-secondary w-full cursor-none
                   placeholder:text-[#757879]"
               >
                 <a
@@ -44,14 +45,14 @@ const Contact = () => {
               <input
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                   font-secondary w-full pl-12
+                   font-secondary w-full  xl:pl-12
                   placeholder:text-[#757879]"
                 disabled
                 defaultValue={"+380962879050"}
               ></input>
             </div>
             <input
-              className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-48  placeholder:text-[#757879]"
+              className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-auto pl-24 xl:pl-48  placeholder:text-[#757879]"
               disabled
               defaultValue={"Здесь неякой контакт"}
               type="text"

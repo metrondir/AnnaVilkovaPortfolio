@@ -12,8 +12,8 @@ const Header = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
   return (
     <header
       className="fixed w-full px-[30px] 
-  lg:px-[100px] z-30 h-[70px] lg:h-[80px] flex 
-  
+  lg:px-[100px] z-30 h-[60px] lg:h-[110px] flex 
+ 
   items-center shadow-xl bg-white"
     >
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
