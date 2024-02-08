@@ -12,7 +12,8 @@ const Header = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
   return (
     <header
       className="fixed w-full px-[30px] 
-  lg:px-[100px] z-30 h-[100px] lg:h-[90px] flex 
+  lg:px-[100px] z-30 h-[70px] lg:h-[80px] flex 
+  
   items-center shadow-xl bg-white"
     >
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between">
@@ -65,6 +66,30 @@ const Header = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
             Обо мне
           </Link>
           <Link
+            to="/gallery"
+            className="text-[#696c6d] hover:text-primary transition"
+          >
+            Галерея
+          </Link>
+          <Link
+            to="/#price"
+            onClick={() => {
+              handleScroll(contactRef.current);
+            }}
+            className="text-[#696c6d] hover:text-primary transition"
+          >
+            Цены
+          </Link>
+          <Link
+            to="/#course"
+            onClick={() => {
+              handleScroll(contactRef.current);
+            }}
+            className="text-[#696c6d] hover:text-primary transition"
+          >
+            Обучения
+          </Link>
+          <Link
             to="/#contact"
             onClick={() => {
               handleScroll(contactRef.current);
@@ -75,13 +100,13 @@ const Header = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
           </Link>
         </nav>
         <nav>
+          <Socials />
           <MobileNav
             homeRef={homeRef}
             portfolioRef={portfolioRef}
             aboutRef={aboutRef}
             contactRef={contactRef}
           />
-          <Socials />
         </nav>
       </div>
     </header>

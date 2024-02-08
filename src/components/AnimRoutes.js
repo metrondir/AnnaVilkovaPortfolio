@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import Home from "../pages/Home";
+
+import Gallery from "../pages/Gallery";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -12,6 +14,7 @@ const AnimRoutes = () => {
     <AnimatePresence initial={true} mode="wait">
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </AnimatePresence>
   );

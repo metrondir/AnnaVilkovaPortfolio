@@ -30,12 +30,13 @@ const Contact = () => {
               <button
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                  font-secondary w-full pl-3
+                  font-secondary w-full pl-3 cursor-none
                   placeholder:text-[#757879]"
               >
                 <a
                   href="https://www.instagram.com/photographer_anna_vilkova/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Instagram
                 </a>

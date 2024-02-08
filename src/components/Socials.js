@@ -16,20 +16,21 @@ const Socials = () => {
     <div
       onMouseEnter={mouseEnterHandler}
       onMouseLeave={mouseLeaveHandler}
-      className="hidden xl:flex ml-24"
+      className="hidden xl:flex ml-auto gap-x-12 font-semibold"
     >
       <ul className="flex gap-x-5">
         <li>
           <a
             href="https://www.instagram.com/photographer_anna_vilkova/"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             <FaInstagram />
           </a>
         </li>
         <li>
-          <a href="https://www.viber.com" target="_blank">
+          <a href="https://www.viber.com" target="_blank" rel="noreferrer">
             <FaViber />
           </a>
         </li>
@@ -37,27 +38,17 @@ const Socials = () => {
           <a
             href="https://www.facebook.com/photographerannaivanova14"
             target="_blank"
+            rel="noreferrer"
           >
             {" "}
             <FaFacebook />
           </a>
         </li>
+
         <li>
-          <a href="https://www.pinterest.com" target="_blank">
-            {" "}
-            <FaPinterest />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com" target="_blank">
+          <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
             {" "}
             <FaTwitter />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com" target="_blank">
-            {" "}
-            <FaYoutube />
           </a>
         </li>
       </ul>

@@ -1,16 +1,16 @@
 import React, { useContext, useRef } from "react";
 
-import AnnaImage from "../img/home/AnnaImage.jpg";
-import Header from "../components/Header";
-import { Link } from "react-router-dom";
-import handleScroll from "../utils/handleScroll";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import AnnaImage from "../img/home/AnnaImage.jpg";
+import handleScroll from "../utils/handleScroll";
 import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 
-import { transition1 } from "../transitions";
 import { CursorContext } from "../context/CursorContext";
+import { transition1 } from "../transitions";
 
 const Home = () => {
   const homeRef = useRef(null);
@@ -24,7 +24,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition1}
-      className="section  h-screen overflow-y-auto bg-gradient-to-r from-neutral-600 to-gray-200"
+      className="section cursor-none h-screen overflow-y-auto bg-gradient-to-r from-neutral-600 to-gray-200"
     >
       <Header
         homeRef={homeRef}

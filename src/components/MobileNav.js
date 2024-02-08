@@ -22,7 +22,7 @@ const menuVariants = {
 const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav className="text-primary xl:hidden flex justify-end items-center">
+    <nav className="text-primary xl:hidden flex justify-end items-center ">
       <div
         onClick={() => setOpenMenu(true)}
         className="text-3xl cursor-pointer"
@@ -32,7 +32,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
       {openMenu && (
         <>
           <div
-            className="fixed inset-0 bg-black opacity-50 z-10"
+            className="fixed inset-0 bg-black opacity-70 z-10"
             onClick={() => setOpenMenu(false)}
           ></div>
           <motion.div
@@ -44,9 +44,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
             <div
               onClick={() => setOpenMenu(false)}
               className="text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer"
-            >
-              <IoMdClose />
-            </div>
+            ></div>
             <ul className="h-full flex flex-col justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl">
               <li>
                 <Link
@@ -79,6 +77,36 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                   to={"/#about"}
                 >
                   Обо мне
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => {
+                    setOpenMenu(false);
+                  }}
+                  to={"/gallery"}
+                >
+                  Галерея
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#price"
+                  onClick={() => {
+                    handleScroll(contactRef.current);
+                  }}
+                >
+                  Цены
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#course"
+                  onClick={() => {
+                    handleScroll(contactRef.current);
+                  }}
+                >
+                  Обучения
                 </Link>
               </li>
               <li>

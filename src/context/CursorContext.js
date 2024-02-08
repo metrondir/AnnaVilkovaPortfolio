@@ -32,6 +32,7 @@ const CursorProvider = ({ children }) => {
 
   const cursorVariants = {
     default: {
+      cursor: "none",
       x: cursorPos.x - 16,
       y: cursorPos.y - 16,
       backgroundColor: "#0e1112",
@@ -41,12 +42,13 @@ const CursorProvider = ({ children }) => {
       height: "150px",
       x: cursorPos.x - 72,
       y: cursorPos.y - 72,
+      cursor: "none",
       backgroundColor: "#fff",
       mixBlendMode: "difference",
     },
     none: {
-      width: 0,
-      height: 0,
+      width: undefined,
+      height: undefined,
       backgroundColor: "#ffffff",
     },
   };
