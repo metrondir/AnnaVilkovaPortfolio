@@ -30,7 +30,7 @@ const Contact = () => {
               <button
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                  xl:pr-10 xl:pl-10 
+                  xl:pr-10 xl:pl-10  
                   font-secondary w-full cursor-none
                   placeholder:text-[#757879]"
               >
@@ -38,7 +38,7 @@ const Contact = () => {
                 <a
                   href="https://www.instagram.com/photographer_anna_vilkova/"
                   target="_blank"
-                  className="text-primary font-bold underline "
+                  className="text-primary font-bold underline text-lg "
                   rel="noreferrer"
                 >
                   Instagram
@@ -48,15 +48,15 @@ const Contact = () => {
               <input
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                   font-secondary w-full  xl:pl-12
-                   pt-6 pl-3
+                   font-secondary w-full  xl:pl-8 font-bold text-lg
+                   pt-5 
                   placeholder:text-[#757879]"
                 disabled
                 defaultValue={"+380962879050"}
               ></input>
             </div>
             <input
-              className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-auto pl-24 xl:pl-48  placeholder:text-[#757879]"
+              className="outline-none border-b text-lg border-b-primary h-[60px] bg-transparent text-primary font-bold  w-auto pl-24 xl:pl-48"
               disabled
               defaultValue={"Здесь неякой контакт"}
               type="text"
