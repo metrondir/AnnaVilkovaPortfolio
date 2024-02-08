@@ -34,7 +34,7 @@ const Contact = () => {
                   font-secondary w-full cursor-none
                   placeholder:text-[#757879]"
               >
-                <FaInstagram className="mx-14 lg:mx-20" />
+                <FaInstagram className="mx-20 lg:mx-20" />
                 <a
                   href="https://www.instagram.com/photographer_anna_vilkova/"
                   target="_blank"
@@ -49,18 +49,12 @@ const Contact = () => {
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
                    font-secondary w-full  xl:pl-8 font-bold text-lg
-                   pt-5 
+                   pt-5 pl-6
                   placeholder:text-[#757879]"
                 disabled
-                defaultValue={"+380962879050"}
+                defaultValue={"+380660164694"}
               ></input>
             </div>
-            <input
-              className="outline-none border-b text-lg border-b-primary h-[60px] bg-transparent text-primary font-bold  w-auto pl-24 xl:pl-48"
-              disabled
-              defaultValue={"Здесь неякой контакт"}
-              type="text"
-            ></input>
           </div>
         </div>
         <motion.div
