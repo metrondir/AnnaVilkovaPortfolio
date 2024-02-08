@@ -4,6 +4,7 @@ import Image1 from "../img/portfolio/1.jpg";
 import Image2 from "../img/portfolio/10.jpg";
 import Image3 from "../img/portfolio/3.jpg";
 import Image4 from "../img/portfolio/7.jpg";
+import handleScroll from "../utils/handleScroll";
 
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,7 @@ import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import { CursorContext } from "../context/CursorContext";
 
-const Portfolio = () => {
+const Portfolio = ({ contactRef }) => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <div className="container mx-auto h-full relative">
@@ -31,7 +32,13 @@ const Portfolio = () => {
             Фотография - это момент, перед тем <br />
             как он исчезнет
           </h2>
-          <Link to={"/contact"} className="btn mb-[30px] mx-auto lg:mx-0 ">
+          <Link
+            to={"/#contact"}
+            className="btn mb-[30px] mx-auto lg:mx-0 "
+            onClick={() => {
+              handleScroll(contactRef.current);
+            }}
+          >
             Связаться со мной
           </Link>
         </motion.div>

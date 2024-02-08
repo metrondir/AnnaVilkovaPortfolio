@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import { motion } from "framer-motion";
 
@@ -23,40 +23,39 @@ const Contact = () => {
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
         >
-          <h1 className="h1">Связаться со мной</h1>
-          <p className="mb-12">Я хотела бы получить от вас предложения.</p>
-          <form className="flex flex-col gap-y-8">
-            <div className="flex gap-x-10">
-              <input
+          <h1 className="h1 text-center">Связаться со мной</h1>
+
+          <div className="flex flex-col my-12">
+            <div className="flex gap-x-32">
+              <button
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
                   font-secondary w-full pl-3
                   placeholder:text-[#757879]"
-                placeholder="Your name"
-                type="text"
-              ></input>
+              >
+                <a
+                  href="https://www.instagram.com/photographer_anna_vilkova/"
+                  target="_blank"
+                >
+                  Instagram
+                </a>
+              </button>
               <input
                 className="outline-none border-b
                   border-b-primary h-[60px] bg-transparent
-                  font-secondary w-full pl-3
+                   font-secondary w-full pl-12
                   placeholder:text-[#757879]"
-                placeholder="Your email address"
-                type="text"
+                disabled
+                defaultValue={"+380962879050"}
               ></input>
             </div>
             <input
-              className="outline-none border-b
-                  border-b-primary h-[60px] bg-transparent
-                  font-secondary w-full pl-3
-                  placeholder:text-[#757879]"
-              placeholder="Your message"
+              className="outline-none border-b border-b-primary h-[60px] bg-transparent font-secondary w-full pl-48  placeholder:text-[#757879]"
+              disabled
+              defaultValue={"Здесь неякой контакт"}
               type="text"
             ></input>
-            <button className="btn mb-[30px] mx-auto lg:mx-0 self-start">
-              {" "}
-              Отправить
-            </button>
-          </form>
+          </div>
         </div>
         <motion.div
           className="lg:flex-1 gap"

@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 
 import Socials from "./Socials";
 import Logo from "../img/header/Logo1.svg";
-
+import handleScroll from "../utils/handleScroll";
 import MobileNav from "./MobileNav";
 
 import { Link } from "react-router-dom";
 import { CursorContext } from "../context/CursorContext";
-const Header = () => {
+const Header = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <header
@@ -20,7 +20,10 @@ const Header = () => {
         <Link
           onMouseEnter={mouseEnterHandler}
           onMouseLeave={mouseLeaveHandler}
-          to={"/"}
+          to="/"
+          onClick={() => {
+            handleScroll(homeRef.current);
+          }}
           className="max-w-[200px]"
         >
           <img
@@ -35,32 +38,49 @@ const Header = () => {
           className="hidden xl:flex gap-x-12 font-semibold"
         >
           <Link
-            to={"/"}
+            to="/"
+            onClick={() => {
+              handleScroll(homeRef.current);
+            }}
             className="text-[#696c6d] hover:text-primary transition"
           >
-            Home
+            Главная
           </Link>
           <Link
-            to={"/"}
+            to="/#portfolio"
+            onClick={() => {
+              handleScroll(portfolioRef.current);
+            }}
             className="text-[#696c6d] hover:text-primary transition"
           >
-            About
+            Портфолио
           </Link>
           <Link
-            to={"/"}
+            to="/#about"
+            onClick={() => {
+              handleScroll(aboutRef.current);
+            }}
             className="text-[#696c6d] hover:text-primary transition"
           >
-            Portfolio
+            Обо мне
           </Link>
           <Link
-            to={"/"}
+            to="/#contact"
+            onClick={() => {
+              handleScroll(contactRef.current);
+            }}
             className="text-[#696c6d] hover:text-primary transition"
           >
-            Contact
+            Контакты
           </Link>
         </nav>
         <nav>
-          <MobileNav />
+          <MobileNav
+            homeRef={homeRef}
+            portfolioRef={portfolioRef}
+            aboutRef={aboutRef}
+            contactRef={contactRef}
+          />
           <Socials />
         </nav>
       </div>

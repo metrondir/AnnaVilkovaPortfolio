@@ -11,7 +11,6 @@ const App = () => {
   return (
     <>
       <Router>
-        <Header />
         <AnimRoutes />
       </Router>
       <motion.div
