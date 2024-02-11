@@ -1,13 +1,6 @@
 import React, { useContext } from "react";
 
-import {
-  FaInstagram,
-  FaViber,
-  FaFacebook,
-  FaTwitter,
-  FaYoutube,
-  FaPinterest,
-} from "react-icons/fa";
+import { FaInstagram, FaViber } from "react-icons/fa";
 import { CursorContext } from "../context/CursorContext";
 const Socials = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
@@ -32,23 +25,6 @@ const Socials = () => {
         <li>
           <a href="https://www.viber.com" target="_blank" rel="noreferrer">
             <FaViber />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/photographerannaivanova14"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            <FaFacebook />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-            {" "}
-            <FaTwitter />
           </a>
         </li>
       </ul>

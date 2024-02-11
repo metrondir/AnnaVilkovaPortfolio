@@ -14,7 +14,7 @@ const AnimRoutes = () => {
     <AnimatePresence initial={true} mode="wait">
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
-        <Route path="/gallery" element={<Gallery />} />
+        {/*<Route path="/gallery" element={<Gallery />} />*/}
       </Routes>
     </AnimatePresence>
   );

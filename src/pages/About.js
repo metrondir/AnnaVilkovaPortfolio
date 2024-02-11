@@ -10,16 +10,16 @@ import { transition1 } from "../transitions";
 import { CursorContext } from "../context/CursorContext";
 
 const About = ({ portfolioRef }) => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <div className="container mx-auto h-full relative">
-      <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-80 text-center lg:text-left lg:pt-16">
+      <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16">
         <div className="flex-1 lg:max-h-max order-2 lg:order-none overflow-hidden">
           <motion.img
             whileHover={{ scale: 1.5 }}
             transition={transition1}
             src={AnnaImage}
             alt=" "
+            className=""
           />
         </div>
         <motion.div
@@ -27,8 +27,6 @@ const About = ({ portfolioRef }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: "-80%" }}
           transition={transition1}
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler}
           className="flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
         >
           <h1 className="h1">Обо мне</h1>

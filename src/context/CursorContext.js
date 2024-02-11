@@ -37,15 +37,7 @@ const CursorProvider = ({ children }) => {
       y: cursorPos.y - 16,
       backgroundColor: "#0e1112",
     },
-    text: {
-      width: "150px",
-      height: "150px",
-      x: cursorPos.x - 72,
-      y: cursorPos.y - 72,
-      cursor: "none",
-      backgroundColor: "#fff",
-      mixBlendMode: "difference",
-    },
+
     none: {
       width: 0,
       height: 0,
@@ -53,16 +45,8 @@ const CursorProvider = ({ children }) => {
     },
   };
 
-  const mouseEnterHandler = () => {
-    setCursorBG("text");
-  };
-  const mouseLeaveHandler = () => {
-    setCursorBG("default");
-  };
   return (
-    <CursorContext.Provider
-      value={{ cursorVariants, cursorBG, mouseEnterHandler, mouseLeaveHandler }}
-    >
+    <CursorContext.Provider value={{ cursorVariants, cursorBG }}>
       {children}
     </CursorContext.Provider>
   );

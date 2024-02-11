@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import handleScroll from "../utils/handleScroll";
-
+import { IoMdClose } from "react-icons/io";
 import { CgMenuRight } from "react-icons/cg";
 
 import { Link } from "react-router-dom";
@@ -13,13 +13,20 @@ const menuVariants = {
   },
   show: {
     x: 0,
-    transation: {
-      ease: [0.6, 0.01 - 0.05, 0.9],
+    transition: {
+      ease: [0.6, 0.01, -0.05, 0.9],
     },
   },
 };
 
-const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
+const MobileNav = ({
+  homeRef,
+  portfolioRef,
+  aboutRef,
+  contactRef,
+  courseRef,
+  priceRef,
+}) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <nav className="text-primary xl:hidden flex justify-end items-center ">
@@ -44,13 +51,15 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
             <div
               onClick={() => setOpenMenu(false)}
               className="text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer"
-            ></div>
+            >
+              <IoMdClose />
+            </div>
             <ul className="h-full flex flex-col justify-center items-center gap-y-8 text-primary font-primary font-bold text-3xl">
               <li>
                 <Link
                   onClick={() => {
                     handleScroll(homeRef.current);
-                    setTimeout(() => setOpenMenu(false), 322);
+                    setOpenMenu(false);
                   }}
                   to={"/"}
                 >
@@ -61,7 +70,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(portfolioRef.current);
-                    setTimeout(() => setOpenMenu(false), 322);
+                    setOpenMenu(false);
                   }}
                   to={"/#portfolio"}
                 >
@@ -72,7 +81,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(aboutRef.current);
-                    setTimeout(() => setOpenMenu(false), 322);
+                    setOpenMenu(false);
                   }}
                   to={"/#about"}
                 >
@@ -82,7 +91,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
               <li>
                 <Link
                   onClick={() => {
-                    setTimeout(() => setOpenMenu(false), 322);
+                    setOpenMenu(false);
                   }}
                   to={"/gallery"}
                 >
@@ -93,7 +102,8 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   to="/#price"
                   onClick={() => {
-                    setTimeout(() => setOpenMenu(false), 322);
+                    handleScroll(priceRef.current);
+                    setOpenMenu(false);
                   }}
                 >
                   Цены
@@ -103,7 +113,8 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   to="/#course"
                   onClick={() => {
-                    setTimeout(() => setOpenMenu(false), 322);
+                    handleScroll(courseRef.current);
+                    setOpenMenu(false);
                   }}
                 >
                   Обучения
@@ -113,7 +124,7 @@ const MobileNav = ({ homeRef, portfolioRef, aboutRef, contactRef }) => {
                 <Link
                   onClick={() => {
                     handleScroll(contactRef.current);
-                    setTimeout(() => setOpenMenu(false), 322);
+                    setOpenMenu(false);
                   }}
                   to={"/#contact"}
                 >

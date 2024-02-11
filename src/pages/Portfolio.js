@@ -11,10 +11,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { transition1 } from "../transitions";
-import { CursorContext } from "../context/CursorContext";
 
 const Portfolio = ({ contactRef }) => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <div className="container mx-auto h-full relative">
       <div className="flex flex-col h-full items-center justify-center gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8">
@@ -24,8 +22,6 @@ const Portfolio = ({ contactRef }) => {
           exit={{ opacity: 0, y: "-80%" }}
           transition={transition1}
           className="flex flex-col lg:items-center"
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler}
         >
           <h1 className="h1">Портфолио </h1>
           <h2 className="text-center mb-12 h2 text-lg lg:text-3xl font-medium">
@@ -43,32 +39,32 @@ const Portfolio = ({ contactRef }) => {
           </Link>
         </motion.div>
         <div>
-          <div className="grid grid-cols-2 lg:gap-24 ">
-            <div className="h-[40vh] lg:h-[820px]  overflow-hidden ">
+          <div className="grid grid-cols-2 lg:gap-24 gap-4 ">
+            <div className="h-[50vh] lg:h-[820px]  overflow-hidden ">
               <img
                 className="object-cover h-full   lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image1}
                 alt=" "
               />
             </div>
-            <div className=" h-[40vh] lg:h-[820px]  overflow-hidden ">
+            <div className=" h-[50vh] lg:h-[820px]  overflow-hidden ">
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image2}
                 alt=" "
               />
             </div>
-            <div className=" h-[40vh] lg:h-[820px]  overflow-hidden ">
-              <img
-                className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
-                src={Image3}
-                alt=" "
-              />
-            </div>
-            <div className=" h-[40vh] lg:h-[820px]  overflow-hidden ">
+            <div className=" h-[50vh] lg:h-[820px]  overflow-hidden ">
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image4}
+                alt=" "
+              />
+            </div>
+            <div className=" h-[50vh] lg:h-[820px]  overflow-hidden ">
+              <img
+                className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
+                src={Image3}
                 alt=" "
               />
             </div>
