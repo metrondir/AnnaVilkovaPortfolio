@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 
 import { Card, CardContent } from "../components/card";
-import AnnaImage from "../img/about/AnnaImage_1.webp";
+import AnnaImage from "../img/about/AnnaImage.webp";
 import AnnaImage1 from "../img/home/AnnaImage.webp";
 import AnnaImage2 from "../img/contact/AnnaImage.webp";
 
