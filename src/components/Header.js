@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import Socials from "./Socials";
 import Logo from "../img/header/Logo1.svg";
@@ -17,9 +17,9 @@ const Header = ({
 }) => {
   return (
     <header
-      className=" w-full px-[30px] 
-  lg:px-[100px] z-30 h-[60px] lg:h-[110px] flex 
- 
+      className="fixed w-full px-[30px] 
+  lg:px-[100px]  h-[60px] lg:h-[110px] flex 
+  z-20 lg:-ml-4
   items-center shadow-xl bg-white"
     >
       <div className="flex flex-col lg:flex-row lg:items-center w-full justify-between mt-8">
@@ -33,7 +33,7 @@ const Header = ({
         >
           <img
             src={Logo}
-            alt=""
+            alt="logo"
             className="transform lg:scale-150 sm:scale-20"
           ></img>
         </Link>

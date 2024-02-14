@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import { motion } from "framer-motion";
 import { FaInstagram } from "react-icons/fa";
 import { transition1 } from "../transitions";
 
-import AnnaImage from "../img/contact/AnnaImage.jpg";
+import AnnaImage from "../img/contact/AnnaImage.webp";
 
 const Contact = () => {
   return (
@@ -28,7 +28,7 @@ const Contact = () => {
                 rel="noreferrer"
                 className="outline-none border-b border-b-primary h-[60px] bg-transparent xl:pr-10  pt-1 xl:pl-10 font-secondary w-full cursor-pointer placeholder:text-[#757879] flex items-center"
               >
-                <FaInstagram className="ml-8" />
+                <FaInstagram className="ml-4 lg:ml-8" />
                 <span className="text-primary font-bold underline text-lg ml-2 lg:ml-2">
                   Instagram
                 </span>
@@ -58,7 +58,7 @@ const Contact = () => {
             whileHover={{ scale: 1.1 }}
             transition={transition1}
             src={AnnaImage}
-            alt=""
+            alt="Anna in studio"
           />
         </motion.div>
       </div>

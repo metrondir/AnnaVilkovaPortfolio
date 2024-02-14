@@ -1,9 +1,9 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import AnnaImage from "../img/home/AnnaImage.jpg";
+import AnnaImage from "../img/home/AnnaImage.webp";
 import handleScroll from "../utils/handleScroll";
 import About from "./About";
 import Contact from "./Contact";
@@ -11,7 +11,6 @@ import Portfolio from "./Portfolio";
 import Course from "./Course";
 import Price from "./Price";
 
-import { CursorContext } from "../context/CursorContext";
 import { transition1 } from "../transitions";
 
 const Home = () => {
@@ -28,7 +27,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition1}
-      className="section cursor-none h-screen overflow-y-visible overflow-x-hidden bg-gradient-to-r from-neutral-500 to-gray-200"
+      className="section cursor-none h-screen overflow-y-visible overflow-x-hidden bg-gradient-to-b lg:bg-gradient-to-r from-neutral-500 to-gray-200"
     >
       <Header
         homeRef={homeRef}
@@ -63,7 +62,13 @@ const Home = () => {
           </motion.div>
           <div className="flex justify-end lg:max-h-max ">
             <motion.div className="relative lg:left-40">
-              <motion.img transition={transition1} src={AnnaImage} alt=" " />
+              <motion.img
+                transition={transition1}
+                src={AnnaImage}
+                rel="preload"
+                fetchpriority="high"
+                alt="Main window image Anna"
+              />
             </motion.div>
           </div>
         </div>

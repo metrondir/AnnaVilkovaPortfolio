@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import {
   Carousel,
@@ -9,19 +9,19 @@ import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 
 import { Card, CardContent } from "../components/card";
-import AnnaImage from "../img/about/AnnaImage.jpg";
-import AnnaImage1 from "../img/home/AnnaImage.jpg";
-import AnnaImage2 from "../img/contact/AnnaImage.jpg";
+import AnnaImage from "../img/about/AnnaImage_1.webp";
+import AnnaImage1 from "../img/home/AnnaImage.webp";
+import AnnaImage2 from "../img/contact/AnnaImage.webp";
 
 const Course = () => {
-  const images = [AnnaImage, AnnaImage1, AnnaImage2, AnnaImage1];
-  const info = [
+  const imagesCourse = [AnnaImage, AnnaImage1, AnnaImage2, AnnaImage2];
+  const infoCourse = [
     "fdsіфвіфвівфіввіфві",
     "sdasіфвфвівфввіфвdadas",
     "sівфівівфівфівadsda",
     "sівфівівфівфівadsda",
   ];
-  const header = [
+  const headersCourse = [
     "LIGHT ПАКЕТ УСЛУГ",
     "VIP ПАКЕТ УСЛУГ",
     "PRICE LIST",
@@ -29,7 +29,7 @@ const Course = () => {
   ];
 
   return (
-    <>
+    <div className="mt-20">
       <motion.div
         initial={{ opacity: 0, y: "-80%" }}
         animate={{ opacity: 1, y: 0 }}
@@ -38,36 +38,38 @@ const Course = () => {
         className="flex flex-col items-center "
       >
         <h1 className="h1">Обучения </h1>
-        <h2 className="text-center mb-12 h2 text-lg lg:text-3xl font-medium">
-          Главний текст для обучение <br />
-          еще немного текста
+        <h2 className="text-center mb-12 text-lg lg:text-3xl font-medium">
+          Моя задача сделать из вас фотографа
+          <br />а не чтобы вы боялись конкуренции
         </h2>
       </motion.div>
 
       <Carousel
         opts={{
-          align: "start",
+          align: "center",
         }}
       >
         <CarouselContent className="flex flex-col lg:flex-row">
-          {images.map((image, index) => (
-            <CarouselItem key={index} className="pt-6 w-full">
+          {imagesCourse.map((image, index) => (
+            <CarouselItem key={index} className="pl-2 w-full">
               <div className="relative flex flex-col justify-center items-center">
                 <Card>
                   <div className="flex justify-center">
-                    <p className="text-black lg:text-lg text-sm">
-                      {header[index]}
+                    <p className="text-black lg:text-lg text-sm font-bold font-primary">
+                      {headersCourse[index]}
                     </p>
                   </div>
                   <div className="group">
                     <CardContent className="flex  aspect-square items-center justify-center p-1 relative">
                       <img
                         src={image}
-                        alt="s"
-                        className="h-96 mb-4 max-w-[280px] object-cover rounded-3xl transition-opacity duration-300 group-hover:opacity-40"
+                        alt="courses slider images"
+                        className="h-96 mb-4  max-w-[280px] object-cover rounded-3xl transition-opacity duration-300 group-hover:opacity-20"
                       />
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100">
-                        <p className="text-white">{info[index]}</p>
+                        <p className="text-black  font-bold  lg:text-md w-[280px] ml-5">
+                          {infoCourse[index]}
+                        </p>
                       </div>
                     </CardContent>
                   </div>
@@ -77,7 +79,7 @@ const Course = () => {
           ))}
         </CarouselContent>
       </Carousel>
-    </>
+    </div>
   );
 };
 

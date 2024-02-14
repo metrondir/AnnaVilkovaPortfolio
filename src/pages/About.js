@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 
-import AnnaImage from "../img/about/AnnaImage.jpg";
+import AnnaImage from "../img/about/AnnaImage_1.webp";
 import handleScroll from "../utils/handleScroll";
 import { motion } from "framer-motion";
 
 import { transition1 } from "../transitions";
-import { CursorContext } from "../context/CursorContext";
 
 const About = ({ portfolioRef }) => {
   return (
@@ -18,7 +17,7 @@ const About = ({ portfolioRef }) => {
             whileHover={{ scale: 1.5 }}
             transition={transition1}
             src={AnnaImage}
-            alt=" "
+            alt="Anna and her life"
             className=""
           />
         </div>

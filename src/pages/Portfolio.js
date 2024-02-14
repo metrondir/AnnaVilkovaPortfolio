@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import Image1 from "../img/portfolio/1.jpg";
-import Image2 from "../img/portfolio/10.jpg";
-import Image3 from "../img/portfolio/3.jpg";
-import Image4 from "../img/portfolio/7.jpg";
+import Image1 from "../img/portfolio/1.webp";
+import Image2 from "../img/portfolio/10.webp";
+import Image3 from "../img/portfolio/3.webp";
+import Image4 from "../img/portfolio/7.webp";
 import handleScroll from "../utils/handleScroll";
 
 import { Link } from "react-router-dom";
@@ -44,28 +44,28 @@ const Portfolio = ({ contactRef }) => {
               <img
                 className="object-cover h-full   lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image1}
-                alt=" "
+                alt="First block"
               />
             </div>
             <div className=" h-[50vh] lg:h-[820px]  overflow-hidden ">
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image2}
-                alt=" "
+                alt="Second block"
               />
             </div>
             <div className=" h-[50vh] lg:h-[820px]  overflow-hidden ">
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image4}
-                alt=" "
+                alt="Third block"
               />
             </div>
             <div className=" h-[50vh] lg:h-[820px]  overflow-hidden ">
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image3}
-                alt=" "
+                alt="Fourth block"
               />
             </div>
           </div>
