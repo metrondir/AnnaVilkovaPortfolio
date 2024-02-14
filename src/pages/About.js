@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import AnnaImage from "../img/about/AnnaImage_1.webp";
+import AnnaImage from "../img/about/AnnaImage.webp";
 import handleScroll from "../utils/handleScroll";
 import { motion } from "framer-motion";
 
