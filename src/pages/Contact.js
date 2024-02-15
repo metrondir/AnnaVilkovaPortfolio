@@ -58,6 +58,8 @@ const Contact = () => {
             whileHover={{ scale: 1.1 }}
             transition={transition1}
             src={AnnaImage}
+            srcSet={`${AnnaImage} 1x, ${AnnaImage} 2x`}
+            sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
             alt="Anna in studio"
           />
         </motion.div>

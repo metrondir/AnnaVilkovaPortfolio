@@ -37,7 +37,7 @@ const Header = ({
             className="transform lg:scale-150 sm:scale-20"
           ></img>
         </Link>
-        <nav className="hidden xl:flex gap-x-12 font-semibold">
+        <nav className="hidden xl:flex gap-x-12 font-semibold opacity: 1; transform: translateY(0%) translateZ(0px);">
           <Link
             to="/"
             onClick={() => {
@@ -72,15 +72,6 @@ const Header = ({
             Галерея
           </Link>
           <Link
-            to="/#price"
-            onClick={() => {
-              handleScroll(priceRef.current);
-            }}
-            className="text-[#696c6d] hover:text-primary transition"
-          >
-            Цены
-          </Link>
-          <Link
             to="/#course"
             onClick={() => {
               handleScroll(courseRef.current);
@@ -89,6 +80,16 @@ const Header = ({
           >
             Обучения
           </Link>
+          <Link
+            to="/#price"
+            onClick={() => {
+              handleScroll(priceRef.current);
+            }}
+            className="text-[#696c6d] hover:text-primary transition"
+          >
+            Цены
+          </Link>
+
           <Link
             to="/#contact"
             onClick={() => {

@@ -100,17 +100,6 @@ const MobileNav = ({
               </li>
               <li>
                 <Link
-                  to="/#price"
-                  onClick={() => {
-                    handleScroll(priceRef.current);
-                    setOpenMenu(false);
-                  }}
-                >
-                  Цены
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/#course"
                   onClick={() => {
                     handleScroll(courseRef.current);
@@ -120,6 +109,18 @@ const MobileNav = ({
                   Обучения
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/#price"
+                  onClick={() => {
+                    handleScroll(priceRef.current);
+                    setOpenMenu(false);
+                  }}
+                >
+                  Цены
+                </Link>
+              </li>
+
               <li>
                 <Link
                   onClick={() => {
