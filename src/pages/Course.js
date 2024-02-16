@@ -37,8 +37,7 @@ const Course = () => {
       >
         <h1 className="h1">Обучения </h1>
         <h2 className="text-center mb-12 text-lg lg:text-3xl font-medium">
-          Моя задача сделать из вас фотографа
-          <br />а не чтобы вы боялись конкуренции
+          После обучение Вы будете снимать как профи
         </h2>
       </motion.div>
 
@@ -61,6 +60,7 @@ const Course = () => {
                     <CardContent className="flex aspect-square items-center justify-center p-1 relative">
                       <img
                         src={image}
+                        loading="lazy"
                         srcSet={`${image} 1x, ${image} 2x`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
                         alt="Price slider with images"

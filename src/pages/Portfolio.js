@@ -44,6 +44,7 @@ const Portfolio = ({ contactRef }) => {
               <img
                 className="object-cover h-full   lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image1}
+                loading="lazy"
                 srcSet={`${Image1} 1x, ${Image1} 2x`}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
                 alt="First block"
@@ -53,6 +54,7 @@ const Portfolio = ({ contactRef }) => {
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image2}
+                loading="lazy"
                 srcSet={`${Image2} 1x, ${Image2} 2x`}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
                 alt="Second block"
@@ -62,6 +64,7 @@ const Portfolio = ({ contactRef }) => {
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image4}
+                loading="lazy"
                 srcSet={`${Image4} 1x, ${Image4} 2x`}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
                 alt="Third block"
@@ -71,6 +74,7 @@ const Portfolio = ({ contactRef }) => {
               <img
                 className="object-cover h-full lg:h-[820px] hover:scale-150 transition-all duration-500"
                 src={Image3}
+                loading="lazy"
                 srcSet={`${Image3} 1x, ${Image3} 2x`}
                 alt="Fourth block"
               />

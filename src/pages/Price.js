@@ -61,6 +61,7 @@ const Price = () => {
                     <CardContent className="flex aspect-square items-center justify-center p-1 relative">
                       <img
                         src={image}
+                        loading="lazy"
                         alt="Price slider with images"
                         srcSet={`${image} 1x, ${image} 2x`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
