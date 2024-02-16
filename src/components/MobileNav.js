@@ -106,7 +106,7 @@ const MobileNav = ({
                     setOpenMenu(false);
                   }}
                 >
-                  Обучения
+                  Обучениe
                 </Link>
               </li>
               <li>

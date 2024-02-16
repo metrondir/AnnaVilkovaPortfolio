@@ -78,7 +78,7 @@ const Header = ({
             }}
             className="text-[#696c6d] hover:text-primary transition"
           >
-            Обучения
+            Обучение
           </Link>
           <Link
             to="/#price"

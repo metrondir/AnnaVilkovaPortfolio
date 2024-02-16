@@ -35,9 +35,11 @@ const Course = () => {
         transition={transition1}
         className="flex flex-col items-center "
       >
-        <h1 className="h1">Обучения </h1>
+        <h1 className="h1">Обучениe</h1>
         <h2 className="text-center mb-12 text-lg lg:text-3xl font-medium">
-          После обучение Вы будете снимать как профи
+          После обучение <br />
+          Вы будете, снимать <br />
+          как профи!
         </h2>
       </motion.div>
 
