@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-
+import "./index.css";
 import AnimRoutes from "./components/AnimRoutes";
 import { BrowserRouter as Router } from "react-router-dom";
 

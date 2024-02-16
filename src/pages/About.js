@@ -121,7 +121,7 @@ const About = ({ portfolioRef }) => {
           </p>
           <Link
             to={"/#portfolio"}
-            className="btn"
+            className="btn rounded-2xl"
             onClick={() => {
               handleScroll(portfolioRef.current);
             }}

@@ -14,7 +14,7 @@ import { transition1 } from "../transitions";
 
 const Portfolio = ({ contactRef }) => {
   return (
-    <div className="container mx-auto h-full relative">
+    <div className="container mx-auto h-full w-full relative ">
       <div className="flex flex-col h-full items-center justify-center gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8">
         <motion.div
           initial={{ opacity: 0, y: "-80%" }}
@@ -30,7 +30,7 @@ const Portfolio = ({ contactRef }) => {
           </h2>
           <Link
             to={"/#contact"}
-            className="btn mb-[30px] mx-auto lg:mx-0 "
+            className="btn mb-[30px] mx-auto lg:mx-0 rounded-2xl "
             onClick={() => {
               handleScroll(contactRef.current);
             }}

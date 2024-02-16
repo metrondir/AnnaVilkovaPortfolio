@@ -15,11 +15,11 @@ import Image4 from "../img/price/14.webp";
 const Price = () => {
   const imagesPrice = [Image1, Image2, Image3, Image4];
   const infoPrice = [
-    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>В стоимость входит:</strong><br/>-Фотограф, <br/>-2 образа, <br/>-Макияж и укладка,<br/>-Фотостудия <br/><br/><strong> &nbsp;&nbsp; &nbsp;&nbsp;СТОИМОСТЬ </strong> &nbsp;&nbsp;&nbsp;&nbsp;3600 грн<br/>Ви получаете полную организацию сьемки за вас <br/>Оригинали фото до 5-ти дней от 300 шт на google disk<br/>Фото которие ви вибираете<br/> сами в полной ретуши и цветокоррекции до 17 дней 20 шт",
-    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>В стоимость входит:</strong><br/>-Фотограф, <br/>-2 образа, <br/>-Макияж и укладка,<br/>-Фотостудия на вибор <br/><br/><strong> &nbsp;&nbsp; &nbsp;&nbsp;СТОИМОСТЬ </strong> &nbsp;&nbsp;&nbsp;&nbsp;3900 грн<br/>Ви получаете полную организацию сьемки за вас <br/>Оригинали фото до 5-ти дней от 300 шт на google disk<br/>Фото которие ви вибираете<br/> сами в полной ретуши и цветокоррекции до 17 дней 20 шт",
+    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>В стоимость входит:</strong><br/>-Фотограф, <br/>-2 образа, <br/>-Макияж и укладка,<br/>-Фотостудия <br/><br/><strong> &nbsp;&nbsp; &nbsp;&nbsp;СТОИМОСТЬ&nbsp;&nbsp;3600 грн</strong><br/>Ви получаете полную организацию сьемки за вас <br/>Оригинали фото до 5-ти дней<br/> от 300 шт на google disk<br/>Фото на ваш вибор в полной ретуши и цветокоррекции до 17 дней 20 шт",
+    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>В стоимость входит:</strong><br/>-Фотограф, <br/>-2 образа, <br/>-Макияж и укладка,<br/>-Фотостудия на вибор <br/><br/><strong> &nbsp;&nbsp; &nbsp;СТОИМОСТЬ&nbsp;&nbsp;3900 грн</strong><br/>Ви получаете полную организацию сьемки за вас <br/>Оригинали фото до 5-ти дней<br/> от 300 шт на google disk<br/>Фото на ваш вибор в полной ретуши и цветокоррекции до 17 дней 20 шт",
     "♥Индивидуальная &nbsp;&nbsp; 1300грн/час<br/><br/>♥Беременость,<br/>Парная,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1500грн/чаc <br/>Семейная<br/><br/>♥Свадебная,<br/> Крещение, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;от 1600грн/час<br/> День Рождение<br/>",
 
-    "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Подарочние Сертификаты</strong><br/>В конверте /в ел. виде <br/>В наличии на:<br/> -Фотосесию<br/>-Все включено <br/> -Обучение<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Обучение</strong><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Провожу обучение<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Фотограф С О<br/><br/>Мастер класи для начинающих &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;по студийному свету<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Уроки ретуши портрета",
+    "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Подарочние Сертификаты</strong><br/>В конверте /в ел. виде <br/>В наличии на:<br/> -Фотосесию<br/>-Все включено <br/> -Обучение<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Обучение</strong><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Провожу обучение<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Фотограф С О<br/><br/>Мастер класи для начинающих &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;по студийному свету<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Уроки ретуши портрета",
   ];
   const headersPrice = [
     "♥LIGHT ПАКЕТ УСЛУГ♥",
@@ -38,8 +38,7 @@ const Price = () => {
       >
         <h1 className="h1">Цены </h1>
         <h2 className="text-center mb-12 h2 text-lg lg:text-3xl font-medium">
-          Главний текст для цен <br />
-          еще немного текста
+          Подробная информация о моих услугах
         </h2>
       </motion.div>
 

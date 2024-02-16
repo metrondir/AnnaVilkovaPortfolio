@@ -52,12 +52,12 @@ const Home = () => {
             </p>
             <Link
               to={"/#contact"}
-              className="btn mb-[30px] ml-3"
+              className="group  animated-element btn mb-[30px] ml-3 rounded-2xl"
               onClick={() => {
                 handleScroll(contactRef.current);
               }}
             >
-              Связаться со мной{" "}
+              Связаться со мной
             </Link>
           </motion.div>
           <div className="flex justify-end lg:max-h-max ">

@@ -7,25 +7,24 @@ import {
 import { motion } from "framer-motion";
 import { transition1 } from "../transitions";
 import { Card, CardContent } from "../components/card";
-import Image1 from "../img/price/10.webp";
-import Image2 from "../img/price/8.webp";
-import Image3 from "../img/price/15.webp";
-import Image4 from "../img/price/14.webp";
+import Image1 from "../img/course/1.webp";
+import Image2 from "../img/course/2.webp";
+import Image3 from "../img/course/3.webp";
+import Image4 from "../img/course/4.webp";
 
 const Course = () => {
   const imagesPrice = [Image1, Image2, Image3, Image4];
   const infoPrice = [
-    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>В стоимость входит:</strong><br/>-Фотограф, <br/>-2 образа, <br/>-Макияж и укладка,<br/>-Фотостудия <br/><br/><strong> &nbsp;&nbsp; &nbsp;&nbsp;СТОИМОСТЬ </strong> &nbsp;&nbsp;&nbsp;&nbsp;3600 грн<br/>Ви получаете полную организацию сьемки за вас <br/>Оригинали фото до 5-ти дней от 300 шт на google disk<br/>Фото которие ви вибираете<br/> сами в полной ретуши и цветокоррекции до 17 дней 20 шт",
-    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>В стоимость входит:</strong><br/>-Фотограф, <br/>-2 образа, <br/>-Макияж и укладка,<br/>-Фотостудия на вибор <br/><br/><strong> &nbsp;&nbsp; &nbsp;&nbsp;СТОИМОСТЬ </strong> &nbsp;&nbsp;&nbsp;&nbsp;3900 грн<br/>Ви получаете полную организацию сьемки за вас <br/>Оригинали фото до 5-ти дней от 300 шт на google disk<br/>Фото которие ви вибираете<br/> сами в полной ретуши и цветокоррекции до 17 дней 20 шт",
-    "♥Индивидуальная &nbsp;&nbsp; 1300грн/час<br/><br/>♥Беременость,<br/>Парная,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1500грн/чаc <br/>Семейная<br/><br/>♥Свадебная,<br/> Крещение, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;от 1600грн/час<br/> День Рождение<br/>",
-
-    "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Подарочние Сертификаты</strong><br/>В конверте /в ел. виде <br/>В наличии на:<br/> -Фотосесию<br/>-Все включено <br/> -Обучение<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Обучение</strong><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Провожу обучение<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Фотограф С О<br/><br/>Мастер класи для начинающих &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;по студийному свету<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Уроки ретуши портрета",
+    "<strong> Невозможно унести вообще <br/>всё из обучения, поэтому важно взять столько, сколько помещается сейчас</strong><br/><br/>Остальное у вас всегда будет сохранено.Как и возможность спросить, потому что я на СВЯЗИ И ПОСЛЕ обучения 24/7<br/><br/>Еще у моих учеников есть возможность прийти 3 раза на мои съемки БЕСПЛАТНО! Чтобы взять что-то новое. ",
+    "-Начнешь разбираться в фотоапаратах <br/>-Научишься организовывать творческие сьемки <br/>-Научишься работать со светом <br/>-Разберешься в нюансах позирования и работы с моделью<br/>-Научишься привлекать клиентов на свои съемки и заработаешь первые деньги<br/>-Узнаеш практики по работе со страхом и сопротивлением в работе<br/>",
+    "Этот курс подойтет всем , с нуля вы,или начинающий фотограф<br/><br/>Cейчас фотографу нужно вести соц сети, снимать, обрабатывать, продавать свои услуги, уметь общаться с клиентом, этс все будет в этом самом обучении <br/><br/> Этот курс-это отличный толчок <br/>к развитию, к тому чтобы вы ходили на работу с удовольствием!",
+    "-Теория +практика с 1 дня 3-4 съемки <br/>-Качественный исходник <br/>-Работа с моделями в студии <br/>-Работа со студийным оборудованием <br/>-Схемы света<br/>-Оформление страницы, настройка рекламы<br/>-Как составить прайс<br/>-Продвижение<br/>-Мини портфолио с обучения +бекстейджи<br/>-Отвечаю на ваши вопросы <br/>-Сертификат о прохождении",
   ];
   const headersPrice = [
-    "♥LIGHT ПАКЕТ УСЛУГ♥",
-    "♥VIP ПАКЕТ УСЛУГ♥",
-    "♥PRICE LIST♥",
-    "♥PRICE ДОПОЛНЕНИЕ♥",
+    "♥ВАЖНО:♥",
+    "♥НА ОБУЧЕНИЕ ТЫ:♥",
+    "♥КОМУ ПОДОЙДЕТ♥",
+    "♥ПРОГРАМА ОБУЧЕНИЕ♥",
   ];
   return (
     <div className="mt-20">
