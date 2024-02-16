@@ -65,7 +65,9 @@ const Home = () => {
               <motion.img
                 transition={transition1}
                 src={AnnaImage}
-                loading="lazy"
+                rel="preload"
+                width="1200 px"
+                height="700 px"
                 srcSet={`${AnnaImage} 1x, ${AnnaImage} 2x`}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
                 alt="Main window image Anna"
@@ -86,6 +88,7 @@ const Home = () => {
         <div ref={priceRef}>
           <Price />
         </div>
+
         <div ref={contactRef}>
           <Contact />
         </div>

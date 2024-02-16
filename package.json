@@ -13,6 +13,7 @@
     "date-fns": "^3.3.1",
     "embla-carousel-autoplay": "^8.0.0-rc22",
     "embla-carousel-react": "^8.0.0-rc22",
+    "idb": "^8.0.0",
     "lucide-react": "^0.323.0",
     "react": "^18.2.0",
     "react-day-picker": "^8.10.0",

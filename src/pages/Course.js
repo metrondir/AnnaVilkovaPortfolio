@@ -64,15 +64,15 @@ const Course = () => {
                         srcSet={`${image} 1x, ${image} 2x`}
                         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
                         alt="Price slider with images"
-                        className="h-96 mb-4 max-w-[280px] object-cover rounded-3xl  duration-300  group-hover:opacity-20"
+                        className="h-96 mb-4 max-w-[280px] object-cover rounded-3xl "
                       />
-                      <div className="absolute inset-0  flex items-center justify-start opacity-0 hover:opacity-100">
-                        <p
-                          dangerouslySetInnerHTML={{ __html: infoPrice[index] }}
-                          className="text-black font-bold lg:text-md w-[280px] ml-5 "
-                        ></p>
-                      </div>
                     </CardContent>
+                    <div className=" inset-0  flex items-end justify-end ">
+                      <p
+                        dangerouslySetInnerHTML={{ __html: infoPrice[index] }}
+                        className="text-black font-bold lg:text-md w-[280px] ml-5 "
+                      ></p>
+                    </div>
                   </div>
                 </Card>
               </div>
