@@ -27,7 +27,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition1}
-      className="section cursor-none h-screen overflow-y-visible overflow-x-hidden bg-gradient-to-b lg:bg-gradient-to-r from-neutral-500 to-gray-200"
+      className="section cursor-none  overflow-x-hidden bg-gradient-to-b lg:bg-gradient-to-r from-neutral-500 to-gray-200"
     >
       <Header
         homeRef={homeRef}
@@ -37,16 +37,16 @@ const Home = () => {
         courseRef={courseRef}
         priceRef={priceRef}
       />
-      <div ref={homeRef} className="container mx-auto h-full relative">
-        <div className=" flex flex-col justify-center">
+      <div ref={homeRef} className=" items-center h-full relative">
+        <div className=" flex flex-col items-center  justify-center">
           <motion.div
             initial={{ opacity: 0, y: "-50%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-50%" }}
             transition={transition1}
-            className="w-full pt-36 pb-14 lg:pt-0 lg:pb-[550px]  lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start"
+            className="w-full pt-36 pb-14 lg:pr-[850px] lg:pb-[550px] lg:w-auto z-10 lg:absolute flex flex-col  justify-center  items-center "
           >
-            <h1 className="h1 lg:-ml-20">Фотограф</h1>
+            <h1 className="h1 ">Фотограф</h1>
             <p className="text-[16px] lg:text-[26px] font-primary mb-4 lg:mb-12 lg:ml-5 ">
               Николаев , Украина
             </p>
@@ -60,7 +60,7 @@ const Home = () => {
               Связаться со мной
             </Link>
           </motion.div>
-          <div className="flex justify-end lg:max-h-max ">
+          <div className="flex justify-center lg:max-h-max ">
             <motion.div className="relative lg:left-40">
               <motion.img
                 transition={transition1}
